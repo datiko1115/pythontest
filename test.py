@@ -80,5 +80,11 @@ for index in range(11): #index以外でもいいが作法としてindexにすす
 for item in size_list: #listと組み合わせる場合は変数名はitemにされることが多い
   print(item)
 
+#with
+#open()
+with open("./test.txt", "r")as file: #引数１⇨ファイルのパス、引数２⇨モード(書き足したい時＝w、読み込みたい時＝r、)
+  print(file.read())#name(),mode()等別の関数も入れられる
+
+
 
 
