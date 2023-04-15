@@ -46,8 +46,24 @@ elif num1 == 0:
 else:
   print('less than 3')
 
+#関数
+def test_function():
+  num = 9
+
+  if(num < 10):
+    return "the num is less than 10"
+  else:
+    return "the num is more than 10"
+
+print(test_function())
 
 
+def test_function(arg):#引数有
+  num = arg
 
+  if(num < 10):
+    return "the num is less than 10"
+  else:
+    return "the num is more than 10"
 
-
+print(test_function(15))
