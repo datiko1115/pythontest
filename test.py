@@ -47,7 +47,7 @@ else:
   print('less than 3')
 
 #関数
-def test_function():
+def test_function1():
   num = 9
 
   if(num < 10):
@@ -55,10 +55,10 @@ def test_function():
   else:
     return "the num is more than 10"
 
-print(test_function())
+print(test_function1())
 
 
-def test_function(arg):#引数有
+def test_function2(arg):#引数有
   num = arg
 
   if(num < 10):
@@ -66,4 +66,19 @@ def test_function(arg):#引数有
   else:
     return "the num is more than 10"
 
-print(test_function(15))
+print(test_function2(15))
+
+#list
+size_list = ["s_size","m_size","l_size"]
+print(size_list[0])
+
+#for文
+for index in range(11): #index以外でもいいが作法としてindexにすすのが通例　※iやcountも使われる
+  print(index)
+  print(test_function2(index))
+
+for item in size_list: #listと組み合わせる場合は変数名はitemにされることが多い
+  print(item)
+
+
+
