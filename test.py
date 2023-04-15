@@ -30,6 +30,24 @@ print(num1 + num2)
 
 permit  = True #False
 
+#条件分岐と関係演算子
+# if else elif
+#==, !=, <, >, >=, <=
+if size == "l_size":
+  print('big size!')
+
+if size != "s_size":
+  print('not small size!') 
+
+if num1 > 3:
+  print('more than 3')
+elif num1 == 0:
+  print('it is zero')
+else:
+  print('less than 3')
+
+
+
 
 
 
