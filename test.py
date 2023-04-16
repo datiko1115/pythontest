@@ -85,6 +85,34 @@ for item in size_list: #listと組み合わせる場合は変数名はitemにさ
 with open("./test.txt", "r")as file: #引数１⇨ファイルのパス、引数２⇨モード(書き足したい時＝w、読み込みたい時＝r、)
   print(file.read())#name(),mode()等別の関数も入れられる
 
+#class
+class Card:
+  def __init__(self, date, user_name):
+    self.date = date
+    self.user_name = user_name
+
+  def message(self):
+    return "This massage was posted by " + self.user_name + " at " + self.date
+
+date_a ='2020-01-01'
+user_name_a = 'Taro'
+card_a = Card(date_a, user_name_a)
+
+print(card_a.date)
+print(card_a.user_name) 
+print(card_a.message()) 
+
+
+date_b ='2020-01-03'
+user_name_b = 'Kayoko'
+card_b = Card(date_b, user_name_b)
+
+print(card_b.date)
+print(card_b.user_name) 
+print(card_b.message()) 
+
+
+
 
 
 
